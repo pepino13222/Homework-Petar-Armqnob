@@ -12,11 +12,11 @@ public:
 template<typename Predicate>
 inline PreedicateMulti::PreedicateMulti(Predicate& predicate, Vector<int>& finalMult, Vector<int>& args)
 {
-	Vector<int> tempVector;
+//	Vector<int> tempVector;
 	size_t sizeOfFinalVector = finalMult.getSize();
 	for (size_t i = 0; i < sizeOfFinalVector; i++)
 	{
-		if (predicate(finalMult[i], args))tempVector.add(finalMult[i]);
+		if (predicate(finalMult[i], args))collection.add(finalMult[i]);
 	}
-	collection = tempVector;
+	//collection = tempVector;
 }

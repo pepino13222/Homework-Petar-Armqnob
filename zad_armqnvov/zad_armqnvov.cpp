@@ -5,7 +5,7 @@
 #include "Vector.h"
 #include "DeadMult.h"
 #include "PreedicateMulti.h"
-
+#include <fstream>
 //Checks if the element is divisible by one of the args
 bool predicateOne(int element, Vector<int>& args) {
     const size_t size = args.getSize();
@@ -49,7 +49,19 @@ int main()
 
    // printf("%d\n", testPred->getSize());
     testPred->getCollection().print();
-    //printf("%d %d \n", testVector[0], testVector[1]);
+    //printf("%d %d \n", testVector[0], testVector[1]);0
+
+    std::ifstream is;
+    is.open("Input.txt");
+    if (is.is_open()) {
+        while (is) {
+            char buffer[256];
+            is.getline(buffer, 255);
+            std::ifstream isb;
+            isb.open(buffer);
+        }
+    }
+
     return 0;
 }
 
