@@ -18,5 +18,7 @@ inline PreedicateMulti::PreedicateMulti(Predicate& predicate, Vector<int>& final
 	{
 		if (predicate(finalMult[i], args))collection.add(finalMult[i]);
 	}
+	Helper hp;
+	collection = hp.trimm(collection);
 	//collection = tempVector;
 }

@@ -140,15 +140,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DeadMult.cpp" />
+    <ClCompile Include="FirstFunctionClass.cpp" />
+    <ClCompile Include="Helpers.cpp" />
     <ClCompile Include="Multitude.cpp" />
     <ClCompile Include="PreedicateMulti.cpp" />
+    <ClCompile Include="SecondFunctionCLass.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="zad_armqnvov.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeadMult.h" />
+    <ClInclude Include="FirstFunctionClass.h" />
+    <ClInclude Include="Helpers.h" />
     <ClInclude Include="Multitude.h" />
     <ClInclude Include="PreedicateMulti.h" />
+    <ClInclude Include="SecondFunctionCLass.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

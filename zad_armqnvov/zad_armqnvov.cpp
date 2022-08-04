@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Vector.h"
 #include "DeadMult.h"
+#include "FirstFunctionClass.h"
+#include "SecondFunctionCLass.h"
 #include "PreedicateMulti.h"
 #include <fstream>
 //Checks if the element is divisible by one of the args
@@ -28,30 +30,41 @@ bool predicateTwo(const int& element, Vector<int>& args) {
 }
 
 
+
+
 int main()
 {
     Vector <int> testVector;
 
     testVector.add(1);
     testVector.add(2);
-    testVector.add(2);
-    testVector.add(2);
-    testVector.add(6);
-
     testVector.add(3);
-    testVector.add(4);
+   // testVector.add(2);
+   // testVector.add(2);
+   // testVector.add(6);
+
+    //testVector.add(3);
+  //  testVector.add(4);
 
     Vector<int> testArgs;
-   // testArgs.add(3);
+    testArgs.add(3);
     testArgs.add(2);
-   // Multitude* test = new DeadMult(testVector);
-    Multitude* testPred = new PreedicateMulti(predicateTwo, testVector, testArgs);
-
+    
+    Multitude* test = new DeadMult(testVector);
+    Multitude* test2 = new DeadMult(testArgs);
+   // Multitude* testPred = new PreedicateMulti(predicateTwo, testVector, testArgs);
+    Vector<Multitude*> testCollection;
+    testCollection.add(test2);
+  //  test->getCollection().print();
+  // Multitude* testSecond = new SecondFunctionCLass(testVector,testCollection);
+   Multitude* testFirst = new FirstFunctionClass(testVector,testCollection);
+    Vector<int> result = testFirst->getCollection();
+    result.print();
    // printf("%d\n", testPred->getSize());
-    testPred->getCollection().print();
+   // testPred->getCollection().print();
     //printf("%d %d \n", testVector[0], testVector[1]);0
 
-    std::ifstream is;
+    /*std::ifstream is;
     is.open("Input.txt");
     if (is.is_open()) {
         while (is) {
@@ -60,7 +73,7 @@ int main()
             std::ifstream isb;
             isb.open(buffer);
         }
-    }
+    }*/
 
     return 0;
 }

@@ -1,6 +1,6 @@
 #pragma once
 #include "Vector.h"
-
+#include "Helpers.h"
 class Multitude
 {
 

@@ -6,7 +6,7 @@ class Vector
 {
 public:
 	Vector();
-	Vector(const Vector& other);
+	
 	void add(const T& toAdd);
 	int getSize();
 	bool isEmpty();~Vector();
@@ -35,14 +35,6 @@ template<typename T>
 
 
 
-template<typename T>
- Vector<T>::Vector(const Vector& other)
-{
-	this->destroy();
-	this->collection = other.collection;
-	this->size = other.size;
-	this->last_index = other.last_index;
-}
 
 template<typename T>
  void Vector<T>::add(const T& toAdd)
@@ -80,8 +72,8 @@ template<typename T>
 template<typename T>
  void Vector<T>::destroy()
 {
-	 if (collection) {
-		 delete[] collection;
+	 if (this->collection) {
+	//	 delete[] collection;
 		 collection = nullptr;
 	 }
 }

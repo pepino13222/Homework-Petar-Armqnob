@@ -4,8 +4,8 @@ class DeadMult : public Multitude
 {
 public:
 	DeadMult();
-	DeadMult(const Vector<int>& other);
-	void trim(Vector<int>& forTrim);
+	DeadMult( Vector<int>& other);
+	
 private:
 	
 };
