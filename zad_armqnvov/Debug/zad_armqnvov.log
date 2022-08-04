@@ -1,2 +1,5 @@
 ﻿  zad_armqnvov.cpp
+C:\Users\Pesho\Desktop\dom armqnov\zad_armqnvov\zad_armqnvov\zad_armqnvov.cpp(85,38): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pesho\Desktop\dom armqnov\zad_armqnvov\zad_armqnvov\zad_armqnvov.cpp(140,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pesho\Desktop\dom armqnov\zad_armqnvov\zad_armqnvov\zad_armqnvov.cpp(40,16): warning C4101: 'currentMultitude': unreferenced local variable
   zad_armqnvov.vcxproj -> C:\Users\Pesho\Desktop\dom armqnov\zad_armqnvov\Debug\zad_armqnvov.exe
